@@ -5,7 +5,7 @@ cd /var/www/html
 wget https://downloads.joomla.org/cms/joomla3/3-9-26/Joomla_3-9-26-Stable-Full_Package.tar.gz
 tar zxvf Joomla_3-9-26-Stable-Full_Package.tar.gz
 rm -rf Joomla_3-9-26-Stable-Full_Package.tar.gz
-chown apache. -R *
+chown apache. -R ../html
 
 sed -i '/memory_limit = 128M/c\memory_limit = 256M' /etc/httpd/conf/httpd.conf
 sed -i '/max_execution_time = 30/c\max_execution_time = 240' /etc/httpd/conf/httpd.conf
